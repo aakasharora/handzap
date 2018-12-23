@@ -1,0 +1,149 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    font-family: NotoSans;
+    letter-spacing: -0.2px;
+    font-size: 16px;
+
+}
+
+header {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+    background-color: #ffffff;
+}
+
+header h3 {
+    margin-left: 100px;
+    color: #2a6d84;
+}
+
+header > * {
+    display: inline-block;
+}
+
+header nav {
+    margin-left: -20px;
+}
+
+span.nav-span {
+    margin-left: 50px;
+}
+
+span.nav-span.active {
+    color: #007f72;
+    font-weight: bold;
+}
+
+.right {
+    position: absolute;
+    right: 5%;
+    min-width: 200px;
+    width: 25%;
+}
+
+.right * {
+    display: inline-block;
+}
+
+span.red-dot {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 10px;
+    position: relative;
+    left: -10px;
+    top: -25px;
+}
+
+.Back-Arrow {
+    position: relative;
+    top: -15px;
+    left: -10px;
+}
+
+img.profile-picture {
+    height: 40px;
+    margin-top: 10px;
+}
+
+span.rewards {
+    position: relative;
+    top: 20px;
+}
+
+.f-right {
+    float: right;
+}
+
+
+/*Main View*/
+
+.main-view {
+    width: 78%;
+    height: 70%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+    background-color: #ffffff;
+    margin: 0px 11%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-view .header {
+    height: 15%;
+    padding-left: 2%;
+    padding-top: 2%;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e9e9e9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50px;
+    max-height: 100px;
+}
+
+.main-view span.title {
+    font-size: 24px;
+}
+
+.main-view li.tab {
+    width: 120px;
+    color: #007f72;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 0;
+    opacity: 0.7;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.main-view ul.tabs {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-view li.tab.active {
+    font-weight: bold;
+    border-bottom: 4px solid;
+}
+
+.main-view .body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 65%;
+}
+
+.main-view .body .item {
+    opacity: 0.1;
+    background-color: #d8d8d8;
+    height: 20%;
+}
