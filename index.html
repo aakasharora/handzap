@@ -14,21 +14,21 @@
         <header>
             <h3>Handzap</h3>
             <ul class="nav">
-                <li class="item">Title 1</li>
-                <li class="item active"> Title 2</li>
+                <li class="item" onclick="setTitle('Title 1')">Title 1</li>
+                <li class="item active" onclick="setTitle('Title 2')"> Title 2</li>
             </ul>
             <span class="grow"></span>
             <div class="profile">
                 <span class="rewards">MY REWARDS</span>
                 <span class="grow"></span>
-                <div style="min-width: 75px;">
+                <div style="min-width: 75px;" onmouseenter="toggleProfileBox(true)">
                     <img src="img/profile.png" class="profile-picture">
                     <span class="red-dot"></span>
                     <img src="img/back-arrow.svg" class="Back-Arrow">
                 </div>
             </div>
         </header>
-        <div class="profile profile-detail">
+        <div class="profile profile-detail" style="display: none;" onmouseleave="toggleProfileBox(false)">
             <div class="personal-info">
                 <img src="img/profile.PNG" alt="profile-picture">
                 <div class="info">
@@ -79,6 +79,8 @@
             </div>
         </div>
     </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
