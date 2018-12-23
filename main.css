@@ -13,52 +13,53 @@ html, body {
 
 }
 
+.grow {
+    flex-grow: 1;
+}
+
 header {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
     background-color: #ffffff;
+    display: flex;
+    padding: 0 100px;
 }
 
 header h3 {
-    margin-left: 100px;
     color: #2a6d84;
 }
 
-header > * {
+header ul.nav {
+    list-style-type: none;
+    display: inline-flex;
+    margin-top: 1.4em;
+}
+
+ul.nav li.item {
     display: inline-block;
+    width: 100px;
 }
 
-header nav {
-    margin-left: -20px;
-}
-
-span.nav-span {
-    margin-left: 50px;
-}
-
-span.nav-span.active {
+ul.nav .item.active {
     color: #007f72;
     font-weight: bold;
 }
 
-.right {
-    position: absolute;
-    right: 5%;
+.profile {
     min-width: 200px;
     width: 25%;
+    max-width: 320px;
+    display: flex;
 }
 
-.right * {
-    display: inline-block;
-}
-
-span.red-dot {
+.red-dot {
     width: 10px;
     height: 10px;
     background-color: red;
     border-radius: 10px;
     position: relative;
     left: -10px;
-    top: -25px;
+    top: -30px;
+    display: inline-block;
 }
 
 .Back-Arrow {
@@ -73,12 +74,8 @@ img.profile-picture {
 }
 
 span.rewards {
-    position: relative;
-    top: 20px;
-}
-
-.f-right {
-    float: right;
+    padding-top: 20px;
+    padding-left: 30px;
 }
 
 
@@ -147,3 +144,90 @@ span.rewards {
     background-color: #d8d8d8;
     height: 20%;
 }
+
+
+/*Profile detail box*/
+
+.profile-detail {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 2;
+    right: 100px;
+    height: 452px;
+    flex-direction: column;
+}
+
+.personal-info {
+    height: 84px;
+    border-bottom: 1px solid #d3d5d7;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+}
+
+ul.actions {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+ul.actions li.item {
+    height: 46px;
+    border-bottom: 1px solid #d3d5d7;
+    padding: 0px 20px;
+    font-size: 14px;
+    line-height: 46px;
+}
+
+ul.actions li.item.active {
+    background-color: #276c83;
+    color: #fff;
+}
+
+.text-blue {
+    color: #007aff;
+}
+
+.text-red {
+    color: #ff3b30;
+}
+
+.personal-info img {
+    width: 60px;
+    height: 60px;
+}
+
+.personal-info .info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0px 30px;
+}
+
+.info span.contact {
+    font-size: 12px;
+    color: #9b9b9b;
+    line-height: 10px;
+    margin-top: 5px;
+}
+
+.actions .item img.text-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: -3px;
+  }
+
+  .actions .item span {
+      float: right;
+  }
+
+  .actions .item span img {
+    margin-left: 5px;
+    transform: rotate(-90deg);
+  }
